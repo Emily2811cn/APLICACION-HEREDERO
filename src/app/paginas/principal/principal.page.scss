@@ -1,0 +1,26 @@
+
+//primer card
+ion-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgb(9, 243, 204);
+
+  .imagenes {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 15px;
+  }
+
+  h1, h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  //segundo card
+  .card2{
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(233, 50, 5, 0.33);
+
+  }
+}
