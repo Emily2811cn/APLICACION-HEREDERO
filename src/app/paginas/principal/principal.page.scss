@@ -99,5 +99,9 @@ ion-card {
   font-size: 18px;
   font-weight: bold;
 }
-
+.carg {
+  display: grid;
+  grid-template-columns: repeat(3);
+  align-items: center;
+}
   
