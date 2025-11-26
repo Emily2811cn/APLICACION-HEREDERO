@@ -1,19 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>PRINCIPAL</ion-title>
+    <ion-title>CATÁLOGO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card class="card2">
-      <ion-img src="assets/img/cam2.png" class="img"></ion-img>
+      <ion-img src="assets/img/camisas.png" class="img"></ion-img>
           <ion-card-header>
-            <ion-card-title>perfil</ion-card-title>
-            <ion-card-subtitle color="primary">HEREDERO</ion-card-subtitle>
+            <ion-card-title>PRENDAS DE </ion-card-title>
+            <ion-card-subtitle color="primary">HEREDERO STYLE</ion-card-subtitle>
           </ion-card-header>
     </ion-card>
 
-<ion-card>
+<ion-card class="catalogolista">
   <ion-card-header>
     <ion-card-title>CATALOGO DE CAMISAS</ion-card-title>
     <ion-card-subtitle>Categoria: HOMBRE</ion-card-subtitle>
@@ -23,74 +23,128 @@
         <ion-thumbnail slot="start">
           <img alt="Silhouette of mountains" src="assets/img/cam1.png" />
         </ion-thumbnail>
-        <ion-label>CAMISA 1</ion-label>
+        <ion-label>CAMISA 1: Negro con azul</ion-label>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail slot="start">
           <img alt="Silhouette of mountains" src="assets/img/cam2.png" />
         </ion-thumbnail>
-        <ion-label>CAMISA 2</ion-label>
+        <ion-label>CAMISA 2: Negra con azul de cuadros</ion-label>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail slot="start">
           <img alt="Silhouette of mountains" src="assets/img/cam3.png" />
         </ion-thumbnail>
-        <ion-label>CAMISA 3</ion-label>
+        <ion-label>CAMISA 3: Negra con logo </ion-label>
       </ion-item>
 
       <ion-item lines="none">
         <ion-thumbnail slot="start">
           <img alt="Silhouette of mountains" src="assets/img/cam4.png" />
         </ion-thumbnail>
-        <ion-label>CAMISA 4</ion-label>
+        <ion-label>CAMISA 4: Negra con logo de parapente</ion-label>
+      </ion-item>
+
+            <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="assets/img/cam5.png" />
+        </ion-thumbnail>
+        <ion-label>CAMISA 5: Negra llana</ion-label>
+      </ion-item>
+
+            <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img alt="Silhouette of mountains" src="assets/img/abrigo1.png" />
+        </ion-thumbnail>
+        <ion-label>ABRIGO: Color vino con mangas azules</ion-label>
       </ion-item>
     </ion-list>
 </ion-card>
 
+<ion-grid>
+  <ion-row>
+    <!-- Camisa 1 -->
+    <ion-col size="4">
+      <ion-card class="detalle-card"  (click)="irvermas()">
+        <ion-img src="assets/img/cam1.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>CAMISA DE HOMBRE TALLA L</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $12</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
 
+    <!-- Camisa 2 -->
+    <ion-col size="4">
+      <ion-card class="detalle-card">
+        <ion-img src="assets/img/cam2.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>CAMISA DE HOMBRE TALLA S</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $10</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
 
+    <!-- Camisa 3 -->
+    <ion-col size="4">
+      <ion-card class="detalle-card">
+        <ion-img src="assets/img/cam3.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>CAMISA DE HOMBRE TALLA M</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $10</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 
+  <ion-row>
+    <!-- Camisa 4 -->
+    <ion-col size="4">
+      <ion-card class="detalle-card">
+        <ion-img src="assets/img/cam4.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>CAMISA DE HOMBRE TALLA S</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $10</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
 
-  <ion-card>
-    <ion-img src="assets/img/cam2.png" class="imagenes"></ion-img>
-    <ion-text color="primary">
-      <h1>CAMISA  DE HOMBRE TALLA S</h1>
-    </ion-text>
+    <!-- Camisa 5 -->
+    <ion-col size="4">
+      <ion-card class="detalle-card">
+        <ion-img src="assets/img/cam5.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>CAMISA DE HOMBRE TALLA S</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $10</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
 
-    <ion-text color="danger">
-      <h2>Precio $10</h2>
-    </ion-text>
-
-  </ion-card>
-
-
-    <ion-card>
-    <ion-img src="assets/img/cam3.png" class="imagenes"></ion-img>
-    <ion-text color="primary">
-      <h1>CAMISA  DE HOMBRE TALLA M</h1>
-    </ion-text>
-
-    <ion-text color="danger">
-      <h2>Precio $10</h2>
-    </ion-text>
-
-  </ion-card>
-
-
-
-    <ion-card>
-    <ion-img src="assets/img/cam4.png" class="imagenes"></ion-img>
-    <ion-text color="">
-      <h1>CAMISA  DE HOMBRE TALLA S</h1>
-    </ion-text>
-
-    <ion-text color="danger">
-      <h2>Precio $10</h2>
-    </ion-text>
-
-  </ion-card>
-
+    <!-- Abrigo -->
+    <ion-col size="4">
+      <ion-card class="detalle-card">
+        <ion-img src="assets/img/abrigo1.png" class="imagenes"></ion-img>
+        <ion-text color="primary">
+          <h1>ABRIGO COLOR VINO</h1>
+        </ion-text>
+        <ion-text color="danger">
+          <h2>Precio $10</h2>
+        </ion-text>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 
 </ion-content>

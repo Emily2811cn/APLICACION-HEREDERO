@@ -27,7 +27,6 @@ import {
     IonContent,
     IonText,
     IonIcon,
-    IonButton
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
