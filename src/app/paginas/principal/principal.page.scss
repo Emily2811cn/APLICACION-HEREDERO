@@ -1,6 +1,6 @@
 
 //PRIMER CARD PEQUEÑO
-  .card2{ 
+  .card2{
     width: 200px; //tamaño de la card
     margin: 20px auto; //centrar la card horizontalmente
     border-radius: 18px; //bordes redondeados
@@ -10,7 +10,7 @@
 
   .card2 ion-img{
     width: 150px; //tamaño de la imagen (logo)
-    height: 150px; 
+    height: 150px;
     border-radius: 50%; //hacer la imagen circular
     margin:0% auto; //centrar la imagen
     display: block; //hacer que la imagen se comporte como un bloque para centrarla
@@ -19,15 +19,15 @@
   .card2 ion-card-subtitle{
     text-align: center; //centrar el texto
     margin-top: 10px; //espacio arriba del texto
-  
+
   }
 // CARD DE LISTA
-.catalogolista { 
+.catalogolista {
   width: 500px;            // ancho más compacto (ajusta según lo que quieras)
   max-width: 90vw;         // nunca más del 90% de la pantalla
   margin: 30px auto;       // centrado horizontal
   border-radius: 18px;     // bordes redondeados
-  box-shadow: 0 4px 8px rgba(199, 145, 43, 0.33); // sombra
+  box-shadow: 0 4px 8px rgba(15, 143, 25, 0.33); // sombra
   text-align: left;        // lista alineada a la izquierda (más natural)
   padding: 10px;           // espacio interno
   max-height: 500px;       // altura máxima
@@ -45,7 +45,7 @@
 /* Títulos y subtítulos del card */
 .catalogolista ion-card-title,
 .catalogolista ion-card-subtitle {
-  text-align: center; 
+  text-align: center;
   margin-top: 10px;
   font-size: 16px;         // tamaño de fuente más compacto
 }
@@ -64,8 +64,8 @@ ion-card {
   border-radius: 20px;  box-shadow: 0 4px 8px rgb(9, 243, 204);
 
   .imagenes {
-    width: 50%; 
-    border-radius: 16px; 
+    width: 50%;
+    border-radius: 16px;
     margin-bottom: 15px;
   }
 
@@ -104,4 +104,4 @@ ion-card {
   grid-template-columns: repeat(3);
   align-items: center;
 }
-  
+

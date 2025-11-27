@@ -13,7 +13,51 @@ import { Router } from '@angular/router';
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PRINCIPALPage implements OnInit {
+  productos = [
+    {
+      id: 1,
+      titulo: "CAMISA DE HOMBRE TALLA L",
+      precio: 12,
+      descripcion: "Camisa de tela algodon",
+      imagen: "assets/img/cam1.png"
+    },
+    {
+      id: 2,
+      titulo: "CAMISA DE HOMBRE TALLA S",
+      precio: 10,
+      descripcion: "Camisa de tela algodon",
+      imagen: "assets/img/cam2.png"
+    },
+    {
+      id: 3,
+      titulo: "CAMISA DE HOMBRE TALLA M",
+      precio: 10,
+      descripcion: "Camisa de tela algodon",
+      imagen: "assets/img/cam3.png"
+    },
+    {
+      id: 4,
+      titulo: "CAMISA DE HOMBRE TALLA S",
+      precio: 10,
+      descripcion: "Camisa de tela algodon",
+      imagen: "assets/img/cam4.png"
+    },
+    {
+      id: 5,
+      titulo: "CAMISA DE HOMBRE TALLA S",
+      precio: 10,
+      descripcion: "Camisa de tela algodon",
+      imagen: "assets/img/cam5.png"
+    },
+    {
+      id: 6,
+      titulo: "CAMISA DE HOMBRE TALLA S",
+      precio: 15,
+      descripcion: "Camisa de tela algodon",
+      imagen:"assets/img/abrigo1.png"
+    },
 
+  ]
   constructor(
     private router: Router
   ) { }
@@ -22,8 +66,8 @@ export class PRINCIPALPage implements OnInit {
   }
 
 
-  irvermas(){
-    this.router.navigate(['/vermas']);
+  irvermas(producto: any){
+    this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
 }
