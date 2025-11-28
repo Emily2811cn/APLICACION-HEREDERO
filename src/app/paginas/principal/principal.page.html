@@ -1,15 +1,19 @@
+<app-header-global>
+
+</app-header-global>
+
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>CATÁLOGO</ion-title>
+    <ion-title>MI TIENDA</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="carg" *ngFor="let p of productos" (click)="irvermas(p)">
-    <ion-card class="card2">
-      <img [src]="p.imagen" class="imagenes"/>
+  <div class="carg">
+    <ion-card class="card2" *ngFor="let p of productos" (click)="irvermas(p)">
+      <img [src]="p.imagen" class="img"/>
       <ion-card-header>
-        <ion-card-title color="primary" class="titulo">{{p.titulo}}</ion-card-title>
+        <ion-card-title color="secondary" class="titulo">{{p.titulo}}</ion-card-title>
         <ion-card-subtitle color="danger" class="precio"> Precio: ${{p.precio}}</ion-card-subtitle>
       </ion-card-header>
     </ion-card>

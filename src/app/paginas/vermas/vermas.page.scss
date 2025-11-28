@@ -1,0 +1,38 @@
+.contenedor-vermas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.imagen {
+    width: 100%;
+    max-width: 200px;
+    border-radius:10px;
+    padding: 10px;
+    box-shadow: 0px 8px 20px rgba($color: hsl(225, 8%, 40%), $alpha: 1.0)
+}
+.contenedor-vermas {
+  text-align: center;   // Centra todo el contenido dentro del div
+
+  h2, p, h3 {
+    display: block;     // Asegura que ocupen todo el ancho
+    margin: 10px 0;     // Espaciado entre elementos
+  }
+
+  h2 {
+    font-weight: bold;  // Negritas para el nombre
+  }
+
+  p {
+    font-style: italic; // Opcional: puedes darle estilo diferente a la descripción
+  }
+
+  h3 {
+    font-weight: bold;  // Negritas para el precio
+    color: red;         // Precio en rojo
+  }
+}

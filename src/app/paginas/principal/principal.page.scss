@@ -1,85 +1,4 @@
 
-//PRIMER CARD PEQUEÑO
-  .card2{
-    width: 200px; //tamaño de la card
-    margin: 20px auto; //centrar la card horizontalmente
-    border-radius: 18px; //bordes redondeados
-    box-shadow: 0 4px 8px rgba(233, 50, 5, 0.33); //sombra de la card
-    text-align: center ; //centrar el contenido dentro de la card
-  }
-
-  .card2 ion-img{
-    width: 150px; //tamaño de la imagen (logo)
-    height: 150px;
-    border-radius: 50%; //hacer la imagen circular
-    margin:0% auto; //centrar la imagen
-    display: block; //hacer que la imagen se comporte como un bloque para centrarla
-  }
-  .card2 ion-card-title,
-  .card2 ion-card-subtitle{
-    text-align: center; //centrar el texto
-    margin-top: 10px; //espacio arriba del texto
-
-  }
-// CARD DE LISTA
-.catalogolista {
-  width: 500px;            // ancho más compacto (ajusta según lo que quieras)
-  max-width: 90vw;         // nunca más del 90% de la pantalla
-  margin: 30px auto;       // centrado horizontal
-  border-radius: 18px;     // bordes redondeados
-  box-shadow: 0 4px 8px rgba(15, 143, 25, 0.33); // sombra
-  text-align: left;        // lista alineada a la izquierda (más natural)
-  padding: 10px;           // espacio interno
-  max-height: 500px;       // altura máxima
-  overflow-y: auto;        // scroll interno si hay muchos items
-}
-
-/* Miniaturas dentro de la lista */
-.catalogolista ion-thumbnail img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Títulos y subtítulos del card */
-.catalogolista ion-card-title,
-.catalogolista ion-card-subtitle {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 16px;         // tamaño de fuente más compacto
-}
-
-
-
-
-
-//TODOS LOS CARD
-ion-card {
-  width: 300px;         // controla el ancho del card
-  height: auto;         // altura automática según contenido
-  max-width: 90vw;      // opcional: no más del 90% del ancho de pantalla
-  max-height: 250px;    // opcional: límite vertical
-  margin: 20px auto;    // centra horizontalmente
-  border-radius: 20px;  box-shadow: 0 4px 8px rgb(9, 243, 204);
-
-  .imagenes {
-    width: 50%;
-    border-radius: 16px;
-    margin-bottom: 15px;
-  }
-
-  h1, h2 {
-    margin-top: 10px; //espacio arriba del texto
-    margin-bottom: 10px; //espacio abajo del texto
-  }
-}
-.detalle-card {
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(9, 243, 204, 0.3);
-  padding: 10px;
-}
 
 .imagenes {
   width: 100%;
@@ -88,20 +7,39 @@ ion-card {
   display: block;
   border-radius: 10px;
   object-fit: cover;
+
 }
 
-.detalle-card h1, .detalle-card h2 {
-  font-size: 16px;
-  margin: 8px 0;
-}
-.detalle-card h2 {
-  color: #e53935;            // rojo más fuerte
-  font-size: 18px;
-  font-weight: bold;
-}
+
 .carg {
   display: grid;
-  grid-template-columns: repeat(3);
+  grid-template-columns: repeat(5 ,2fr);
   align-items: center;
+  gap: 20px;
+  padding: 10px;
 }
 
+.img{
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+
+}
+
+.card2{
+  width: 200px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb(175, 175, 174);
+}
+.titulo {
+  text-align: center;   // Centra el texto horizontalmente
+  display: block;       // Asegura que ocupe todo el ancho
+}
+
+.precio {
+  text-align: center;   // Centra el texto horizontalmente
+  font-weight: bold;    // Negritas
+  color: red;           // Rojo
+  display: block;       // Asegura que ocupe todo el ancho
+}
