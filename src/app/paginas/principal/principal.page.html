@@ -9,8 +9,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-searchbar placeholder="Buscar productos" (ionInput)="filtrar($event)">
+
+  </ion-searchbar>
   <div class="carg">
-    <ion-card class="card2" *ngFor="let p of productos" (click)="irvermas(p)">
+    <ion-card class="card2" *ngFor="let p of productosfiltrados" (click)="irvermas(p)">
       <img [src]="p.imagen" class="img"/>
       <ion-card-header>
         <ion-card-title color="secondary" class="titulo">{{p.titulo}}</ion-card-title>

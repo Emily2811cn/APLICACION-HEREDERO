@@ -85,9 +85,10 @@ export class PRINCIPALPage implements OnInit {
       descripcion: "Blusa para verano",
       imagen:"assets/img/blusa4.png"
     },
-
-
   ]
+
+  productosfiltrados = [...this.productos];
+
   constructor(
     private router: Router
   ) { }
@@ -95,9 +96,18 @@ export class PRINCIPALPage implements OnInit {
   ngOnInit() {
   }
 
-
   irvermas(producto: any){
     this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
+  filtrar(event: any){
+    const texto=(event?.target.value || '').toLowerCase().trim();
+    if(texto === ""){
+      this.productosfiltrados = [...this.productos];
+      return;
+    }
+    this.productosfiltrados=this.productos.filter(
+      p=>p.titulo.toLowerCase().includes(texto) || p.descripcion.toLowerCase().includes(texto)
+    );
+  }
 }
