@@ -1,19 +1,31 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer-global',
   templateUrl: './footer-global.component.html',
   styleUrls: ['./footer-global.component.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [CommonModule, FormsModule]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class FooterGlobalComponent  implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+) { }
 
   ngOnInit() {}
 
+
+  irhorarios(){
+    this.router.navigate(['/horarios']);
+  }
+    irnosotros(){
+    this.router.navigate(['/nosotros']);
+  }
+    irpreguntas(){
+    this.router.navigate(['/preguntas']);
+  }
 }
