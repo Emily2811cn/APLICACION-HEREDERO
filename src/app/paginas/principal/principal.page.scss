@@ -13,7 +13,7 @@
 
 .carg {
   display: grid;
-  grid-template-columns: repeat(5 ,2fr);
+  grid-template-columns: repeat(5 ,2fr); //5
   align-items: center;
   gap: 20px;
   padding: 10px;
@@ -42,4 +42,12 @@
   font-weight: bold;    // Negritas
   color: red;           // Rojo
   display: block;       // Asegura que ocupe todo el ancho
+}
+.search{
+  margin: 10px;
+  background-origin: padding-box;
+  --background: #554f4f51;
+  border-radius: 50%;
+  width: 500px;
+  text-align: left;
 }

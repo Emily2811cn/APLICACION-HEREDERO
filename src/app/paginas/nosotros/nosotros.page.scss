@@ -1,9 +1,113 @@
-ion-content {
+.nosotros-split {
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center;     /* centra verticalmente */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+
+  .imagen-container {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      object-fit: cover;
+    }
+
+    .botones-circulares {
+      margin-top: 15px;
+      display: flex;
+      gap: 12px;
+
+      button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #505050;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+.texto-container {
+  flex: 1 1 45%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;   /* 🔹 Centrado vertical */
+  align-items: center;       /* 🔹 Centrado horizontal */
+  text-align: justify;        /* 🔹 Centra el contenido interno */
+  padding: 10px;
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4f4c4c;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+  .eslogan{
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap; //no da saltos de linea
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px; 
+  }
 }
 
-ion-card {
-  max-width: 400px; /* opcional, para que no se estire demasiado */
+
+}
+.imagen-container img {
+  width: 100%;          /* ocupa todo el ancho disponible */
+  height: 500px;        /* 🔹 altura fija para todas las imágenes */
+  object-fit: cover;    /* recorta la imagen sin deformarla */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); //
+}
+.botones-circulares {
+  margin-top: 1px;
+  display: flex;
+  gap: 12px;
+}
+.fondo{
+  --ion-background-color: #aaa8a8a8;
+}
+ion-button.botonvermas{
+  margin-top: 20px;
+  --background: #313334;     /* 🔹 color de fondo */
+  --color: #ffffff;          /* 🔹 color del texto */
+  --border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  font-weight: bold;
+
+    &:hover {
+      transform: scale(1.1); // efecto de agrandamiento
+      background-color: hsla(0, 0%, 100%, 0);  // cambio de color al pasar el cursor
+    }
 }

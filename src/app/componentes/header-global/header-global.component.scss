@@ -1,7 +1,13 @@
 .Logo{
-  width: 50px;//ANCHO DE LA IMAGEN
-  height: 50px;
+  width: 100px;//ANCHO DE LA IMAGEN
+  height: 100px;
   border-radius: 8px;
+}
 
-
+ion-header,
+ion-toolbar {
+  background-color: #ffffff; /* 🔹 Fondo blanco sólido */
+  --background: #ffffff;     /* 🔹 Ionic variable para fondo */
+  box-shadow: none;          /* 🔹 Elimina sombra inferior */
+  border-bottom: none;       /* 🔹 Elimina línea si existe */
 }

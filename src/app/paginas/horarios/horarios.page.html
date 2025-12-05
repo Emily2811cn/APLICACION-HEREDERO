@@ -1,13 +1,40 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>horarios</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header-global></app-header-global>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">horarios</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section class="horarios-section">
+    <h2 class="titulo-principal">Horarios de Atención</h2>
+
+    <div class="contenedor-horarios">
+      <!-- Tabla de horarios -->
+      <div class="tabla-horarios">
+        <table>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+          <tr>
+            <td>Lunes a Viernes</td>
+            <td>09:00 – 20:00</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>10:00 – 18:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Cerrado</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Mapa -->
+      <div class="mapa-container">
+        <h3 class="subtitulo">Ubicación</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3790.6128899807277!2d-80.76618635845075!3d-1.7617016358470654!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sec!4v1764911839661!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+      </div>
+    </div>
+  </section>
 </ion-content>
+<app-footer-global></app-footer-global>

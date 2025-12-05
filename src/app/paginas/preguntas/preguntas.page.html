@@ -1,13 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>preguntas</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header-global></app-header-global>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">preguntas</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+  <ion-content [fullscreen]="true">
+    <section class="cabecera">  
+      <h2>¿TIENES DUDAS?</h2>
+      <p>Encuentra respuestas a las preguntas más frecuentes sobre nuestras prendas.</p>
+    </section>
+    <ion-accordion-group expand="inset" class="acordion">
+      <ion-accordion *ngFor="let item of preguntas; let i = index" [value]="i">
+        <ion-item slot="header" color="light">
+          <ion-icon [name]="item.icono"></ion-icon>
+          <ion-label>{{ item.titulo }}</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          {{ item.respuesta }}
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-content>
+<app-footer-global></app-footer-global>

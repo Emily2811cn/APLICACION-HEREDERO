@@ -1,30 +1,48 @@
 <app-header-global></app-header-global>
 
-<ion-content>
-  <div class="cards-row">
-    <ion-card>
-      <img alt="Imagen1" src="assets/img/imagen1.png" />
-      <ion-card-header>
-        <ion-card-title>BREVE HISTORIA</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Heredero nació de una idea sencilla, pero poderosa.
-        Todo comenzó cuando Carlos Ramírez, apasionado por el estilo auténtico y las prendas con carácter, decidió crear camisas únicas solo para él.
-        No buscaba una marca, ni un negocio; solo quería vestir algo diferente, algo que lo representara de verdad.
-      </ion-card-content>
-    </ion-card>
+<ion-content class="fondo">
+  <div class="nosotros-split">
+    <!-- Imagen grande -->
+    <div class="imagen-container">
+      <img [src]="imagenActual" alt="Imagen historia" />
 
-    <ion-card>
-      <img alt="Imagen3" src="assets/img/imagen3.png" />
-      <ion-card-header>
-        <ion-card-title>FRASE</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Heredero es más que moda.
-        Es estilo.
-        Es personalidad.
-        Es el legado que Carlos decidió comenzar el día que creó su primera camisa.
-      </ion-card-content>
-    </ion-card>
+      <!-- Botones circulares debajo de la imagen -->
+      <div class="botones-circulares">
+        <button (mouseover)="cambiarImagen('assets/img/imagen4.png')" >1</button>
+        <button (mouseover)="cambiarImagen('assets/img/imagen1.png')">2</button>
+        <button (mouseover)="cambiarImagen('assets/img/imagen3.png')">3</button>
+        <button (mouseover)="cambiarImagen('assets/img/imagen2.png')">4</button>
+      </div>
+    </div>
+
+    <!-- Texto de historia -->
+    <div class="texto-container">
+      <h2>--------------------------- NUESTRA HISTORIA ---------------------------</h2>
+      <p>
+        Heredero nació como una expresión personal de Carlos Ramírez en el año 2021, quien diseñaba camisas únicas para sí mismo, sin intención comercial. 
+        Su estilo auténtico y los detalles artesanales llamaron la atención de quienes lo rodeaban, despertando interés espontáneo por sus prendas. 
+        Lo que comenzó como un experimento individual se transformó en una marca con propósito: ofrecer ropa con identidad, calidad y carácter.
+        Hoy, Heredero es una marca consolidada, reconocida por sus camisas personalizadas y accesibles, que conservan el espíritu original de piezas hechas para quienes desean vestir con historia. 
+       
+      </p>
+      <h2>--------- ESLOGAN ---------</h2>
+      <div class="eslogan">
+        <p>
+        Más que moda, 
+        </p>
+        <p>
+        "Heredero" representa estilo, 
+        </p>
+        <p>
+        personalidad y legado.
+        </p>
+            <ion-button expand="block" routerLink="/principal" (click)="irprincipal()" class="botonvermas">
+            Ver prendas con historia
+            </ion-button>
+      </div>
+    </div>
+
   </div>
+
+  <app-footer-global></app-footer-global>
 </ion-content>
