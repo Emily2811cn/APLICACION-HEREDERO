@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{titulo}}</ion-title>
+    <ion-button class="iconocerrar" slot="end" (click)="cerrarModal()">
+      <ion-icon  name="close-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="conte-img">
+    <img class="img-mas" [src]="imagen">
+  </div>
+</ion-content>

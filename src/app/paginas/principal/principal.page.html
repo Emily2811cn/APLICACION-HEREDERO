@@ -4,15 +4,15 @@
 
 
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <ion-searchbar placeholder="Buscar prendas" (ionInput)="filtrar($event)" class="search">
 
   </ion-searchbar>
   <div class="carg">
-    <ion-card class="card2" *ngFor="let p of productosfiltrados" (click)="irvermas(p)">
-      <img [src]="p.imagen" class="img"/>
+    <ion-card class="card2" *ngFor="let p of productosfiltrados">
+      <img [src]="p.imagen" class="img" (click)="verimagengrande(p)"/>
       <ion-card-header>
-        <ion-card-title color="primary" class="titulo">{{p.titulo}}</ion-card-title>
+        <ion-card-title color="primary" class="titulo" (click)="irvermas(p)">{{p.titulo}}</ion-card-title>
         <ion-card-subtitle color="danger" class="precio"> Precio: ${{p.precio}}</ion-card-subtitle>
       </ion-card-header>
     </ion-card>
