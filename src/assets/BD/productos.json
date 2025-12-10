@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "titulo": "CAMISA DE HOMBRE TALLA L",
+    "precio": 12,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/cam1.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 2,
+    "titulo": "CAMISA DE HOMBRE TALLA S",
+    "precio": 10,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/cam2.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 3,
+    "titulo": "CAMISA DE HOMBRE TALLA M",
+    "precio": 10,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/cam3.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+
+  },
+  {
+    "id": 4,
+    "titulo": "CAMISA DE HOMBRE TALLA S",
+    "precio": 10,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/cam4.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 5,
+    "titulo": "CAMISA DE HOMBRE TALLA S",
+    "precio": 10,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/cam5.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 6,
+    "titulo": "CAMISA DE HOMBRE TALLA S",
+    "precio": 15,
+    "descripcion": "Camisa de tela algodon",
+    "imagen": "assets/img/abrigo1.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 7,
+    "titulo": "BLUSA DE MUJER TALLA S",
+    "precio": 10,
+    "descripcion": "Blusa para verano",
+    "imagen": "assets/img/blusa1.png",
+    "categoria": "Mujer",
+    "subcategoria": "Blusas"
+  },
+  {
+    "id": 8,
+    "titulo": "BODY DE MUJER TALLA S",
+    "precio": 10,
+    "descripcion": "Ideal para verano",
+    "imagen": "assets/img/blusa2.png",
+    "categoria": "Mujer",
+    "subcategoria": "Bodys"
+  },
+  {
+    "id": 9,
+    "titulo": "BODY DE MUJER TALLA S",
+    "precio": 10,
+    "descripcion": "Ideal para verano",
+    "imagen": "assets/img/blusa3.png",
+    "categoria": "Mujer",
+    "subcategoria": "Bodys"
+  },
+  {
+    "id": 10,
+    "titulo": "BODY DE MUJER TALLA S",
+    "precio": 12,
+    "descripcion": "Blusa para verano",
+    "imagen": "assets/img/blusa4.png",
+    "categoria": "Mujer",
+    "subcategoria": "Bodys"
+  },
+  {
+    "id": 11,
+    "titulo": "BUZO DE HOMBRE TALLA M",
+    "precio": 25,
+    "descripcion": "Abrigo de hombre color vino",
+    "imagen": "assets/img/abrigo2.png",
+    "categoria": "Hombre",
+    "subcategoria": "Buzos"
+  },
+  {
+    "id": 12,
+    "titulo": "BUZO DE HOMBRE TALLA L",
+    "precio": 25,
+    "descripcion": "Abrigo de hombre color negro",
+    "imagen": "assets/img/abrigo3.png",
+    "categoria": "Hombre",
+    "subcategoria": "Buzos"
+  },
+  {
+    "id": 13,
+    "titulo": "BUZO DE HOMBRE TALLA M",
+    "precio": 25,
+    "descripcion": "Abrigo de hombre color azul oscuro",
+    "imagen": "assets/img/abrigo4.png",
+    "categoria": "Hombre",
+    "subcategoria": "Buzos"
+  },
+  {
+    "id": 14,
+    "titulo": "BUZO DE HOMBRE TALLA L",
+    "precio": 25,
+    "descripcion": "Abrigo de hombre color verde",
+    "imagen": "assets/img/abrigo5.png",
+    "categoria": "Hombre",
+    "subcategoria": "Buzos"
+  },
+  {
+    "id": 15,
+    "titulo": "BUZO DE HOMBRE TALLA M",
+    "precio": 22,
+    "descripcion": "Abrigo de hombre color gris",
+    "imagen": "assets/img/abrigo6.png",
+    "categoria": "Hombre",
+    "subcategoria": "Buzos"
+  },
+  {
+    "id": 16,
+    "titulo": "CAMISA DE HOMBRE TALLA M",
+    "precio": 15,
+    "descripcion": "Camisa polo en punto ligero color beige",
+    "imagen": "assets/img/cam6.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 17,
+    "titulo": "CAMISA DE HOMBRE TALLA M, L",
+    "precio": 17,
+    "descripcion": "Camisa clasica de playa, color blanca",
+    "imagen": "assets/img/cam7.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 18,
+    "titulo": "CAMISA DE HOMBRE TALLA M",
+    "precio": 16,
+    "descripcion": "Camisa manga corta con botones color negro",
+    "imagen": "assets/img/cam8.png",
+    "categoria": "Hombre",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 19,
+    "titulo": "GORROS PARA INVIERNO",
+    "precio": 8,
+    "descripcion": "Gorros para invierno en color negro y naranja",
+    "imagen": "assets/img/gorro1.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gorros"
+  },
+  {
+    "id": 20,
+    "titulo": "GORROS PARA VERANO",
+    "precio": 7,
+    "descripcion": "Gorros para verano color negro",
+    "imagen": "assets/img/gorro2.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gorros"
+  }
+]

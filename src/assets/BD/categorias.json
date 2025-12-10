@@ -1,0 +1,25 @@
+[
+    {
+        "Categoria": "Hombres",
+        "subcategoria":
+        [
+            "Camisas",
+            "Buzos"
+        ]
+    },
+    {
+        "Categoria": "Mujeres",
+        "subcategoria":
+        [
+            "Blusas",
+            "Bodys"
+        ]
+    },
+    {
+        "Categoria": "Accesorios",
+        "subcategoria":
+        [
+            "Gorros"
+        ]
+    }
+]

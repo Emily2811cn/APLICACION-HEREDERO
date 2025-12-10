@@ -1,13 +1,17 @@
-.Logo{
-  width: 100px;//ANCHO DE LA IMAGEN
+.Logo {
+  width: 100px; /* ancho de la imagen */
   height: 100px;
   border-radius: 8px;
 }
 
 ion-header,
 ion-toolbar {
-  background-color: #ffffff; /* 🔹 Fondo blanco sólido */
-  --background: #ffffff;     /* 🔹 Ionic variable para fondo */
-  box-shadow: none;          /* 🔹 Elimina sombra inferior */
-  border-bottom: none;       /* 🔹 Elimina línea si existe */
+  background-color: #ffffff;
+  --background: #ffffff;
+  box-shadow: none;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+

@@ -12,10 +12,17 @@
 
 .carg {
   display: grid;
-  grid-template-columns: repeat(5 ,2fr); //5
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
+  grid-template-columns: repeat(2 ,1fr); 
+  align-items: center;// Alinea los elementos verticalmente al centro
+  gap: 30px;// Espacio entre las filas y columnas
+  padding: 15px;// Espacio entre los elementos
+}
+@media(min-width: 1024px){
+  .carg {
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));// Ajusta el número de columnas según el tamaño de la pantalla
+    max-width: 1200px;// Ancho máximo del contenedor
+    margin: 0 auto;// Centra el contenedor horizontalmente
+  }
 }
 
 .img{
@@ -26,7 +33,7 @@
 }
 
 .card2{
-  width: 200px;
+  width: 100%;
   margin: 20px auto;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgb(175, 175, 174);
@@ -49,4 +56,50 @@
   border-radius: 50%;
   width: 500px;
   text-align: left;
+}
+/* 🔹 Menú de categorías */
+.categorias {
+  margin-left: auto;
+}
+
+.menu-horizontal {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.item:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.submenu li:hover {
+  background-color: #eee;
 }
