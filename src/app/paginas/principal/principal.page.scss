@@ -12,7 +12,7 @@
 
 .carg {
   display: grid;
-  grid-template-columns: repeat(2 ,1fr); 
+  grid-template-columns: repeat(2 ,1fr);
   align-items: center;// Alinea los elementos verticalmente al centro
   gap: 30px;// Espacio entre las filas y columnas
   padding: 15px;// Espacio entre los elementos
@@ -57,49 +57,59 @@
   width: 500px;
   text-align: left;
 }
-/* 🔹 Menú de categorías */
+
 .categorias {
+  border-bottom: 1px solid #8e09db;
+  padding: 8px 0;
   margin-left: auto;
 }
 
-.menu-horizontal {
-  display: flex;
+.menu-horizontal{
   list-style: none;
-  gap: 20px;
-  padding: 0;
+  display: flex; //que se adapte
+  justify-content: center;
   margin: 0;
+  gap: 25px;
+  padding: 0;
 }
-
 .item {
   position: relative;
   cursor: pointer;
   font-weight: bold;
   color: #000000;
   align-items: center;
+  padding: 8px 12px;
+  transition: color 0.3s;
 }
-
 .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  color: rgb(0, 0, 0);
   list-style: none;
-  padding: 10px;
-  border: 1px solid #ccc;
+  display: flex;
+  top: 32px;
+  left: 0;
+  position: absolute;
+  background: rgba(155, 158, 155, 0.582);
+  padding: 10px 0;
+  margin: 0;
+  min-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(24, 22, 22);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
   z-index: 1000;
 }
-
 .item:hover .submenu {
+  max-height: 300px;
+  opacity: 1;
   display: block;
 }
-
 .submenu li {
-  padding: 5px 10px;
+  padding: 8px 16px;
   cursor: pointer;
+  color:#000000;
 }
 
 .submenu li:hover {
-  background-color: #eee;
+  background-color: #97959786;
 }

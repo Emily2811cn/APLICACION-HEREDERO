@@ -179,5 +179,50 @@
     "imagen": "assets/img/gorro2.png",
     "categoria": "Accesorios",
     "subcategoria": "Gorros"
+  },
+    {
+    "id": 21,
+    "titulo": "GORROS PARA VERANO",
+    "precio": 7,
+    "descripcion": "Gorros para verano color beige",
+    "imagen": "assets/img/gorro3.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gorros"
+  },
+    {
+    "id": 22,
+    "titulo": "GORRA DE VERANO",
+    "precio": 7,
+    "descripcion": "Gorra de verano color blanco",
+    "imagen": "assets/img/gorro4.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gorros"
+  },
+    {
+    "id": 23,
+    "titulo": "GORROS PARA VERANO",
+    "precio": 7,
+    "descripcion": "Gorros para verano color negro y blanco para parejas",
+    "imagen": "assets/img/gorro5.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gorros"
+  },
+    {
+    "id": 24,
+    "titulo": "GAFAS DE VERANO - MUJER",
+    "precio": 5,
+    "descripcion": "Gafas para sol color negro y cafe",
+    "imagen": "assets/img/gafas1.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gafas"
+  },
+      {
+    "id": 25,
+    "titulo": "GAFAS DE VERANO - HOMBRE",
+    "precio": 5,
+    "descripcion": "Gafas para sol color negro",
+    "imagen": "assets/img/gafas2.png",
+    "categoria": "Accesorios",
+    "subcategoria": "Gafas"
   }
 ]

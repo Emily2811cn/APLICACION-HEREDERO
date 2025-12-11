@@ -56,6 +56,8 @@ export class PRINCIPALPage implements OnInit {
     this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
+
+
   filtrar(event: any){
     const texto=(event?.target.value || '').toLowerCase().trim();
     if(texto === ""){
@@ -76,4 +78,7 @@ export class PRINCIPALPage implements OnInit {
       await modal.present();
     }
 
+    mostrarTodos(){
+      this.productosfiltrados = [...this.productos];
+    }
 }
