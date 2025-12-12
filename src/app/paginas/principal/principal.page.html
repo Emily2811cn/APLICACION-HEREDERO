@@ -1,13 +1,12 @@
 <app-header-global
 (textoFiltrado)="onTextoFiltrado($event)">
-
 </app-header-global>
 
 
 
 <ion-content [fullscreen]="true" >
 
-  <nav class="Categorias"> <!--BARRA HORIZONTAL--> 
+  <nav class="Categorias"> <!--BARRA HORIZONTAL-->
     <ul class="menu-horizontal">
       <li class="item" (click)="mostrarTodos()">
         Todos
@@ -15,7 +14,7 @@
       <li class="item" *ngFor="let cat of categorias"> <!--MENU DINAMICO-->
         {{cat.Categoria}}
         <ul class="submenu">
-          <li *ngFor="let sub of cat.subcategoria" 
+          <li *ngFor="let sub of cat.subcategoria"
           (click)="filtrarPorCategoria(sub)"> <!--SUBMENU-->
           {{sub}}
           </li>
@@ -23,8 +22,18 @@
       </li>
     </ul>
   </nav>
+<swiper-container
+  slides-per-view="1"
+  loop="true"
+  autoplay-delay="3000"
+  pagination="true"
+  class="swiper-banner"
+>
+  <swiper-slide *ngFor="let img of imagenesCarrusel">
+    <img [src]="img" class="img-carousel" />
+  </swiper-slide>
+</swiper-container>
 
- 
   <div class="carg">
     <ion-card class="card2" *ngFor="let p of productosfiltrados"> <!--GRID DE LOS PRODUCTOS-->
       <img [src]="p.imagen" class="img" (click)="verimagengrande(p)"/>

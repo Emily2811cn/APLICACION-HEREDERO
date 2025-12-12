@@ -75,7 +75,7 @@ export class PRINCIPALPage implements OnInit {
     mostrarTodos(){//muestra todos los productos
       this.productosfiltrados = [...this.productos];//copia todos los productos al array productosfiltrados
     }
-    
+
   onTextoFiltrado(texto: string) {
   if (texto === "") {
     this.productosfiltrados = [...this.productos];
@@ -88,5 +88,19 @@ export class PRINCIPALPage implements OnInit {
       p.descripcion.toLowerCase().includes(texto)
   );
 }
+imagenesCarrusel = [
+  'assets/img/carru1.png',
+  'assets/img/carru2.png',
+  'assets/img/carru3.png'
 
+];
+
+slideOpts = {
+  initialSlide: 0,
+  speed: 600,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
+};
 }
