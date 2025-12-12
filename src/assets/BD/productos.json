@@ -59,16 +59,16 @@
     "titulo": "BLUSA DE MUJER TALLA S",
     "precio": 10,
     "descripcion": "Blusa para verano",
-    "imagen": "assets/img/blusa1.png",
+    "imagen": "assets/img/body1.png",
     "categoria": "Mujer",
-    "subcategoria": "Blusas"
+    "subcategoria": "Bodys" 
   },
   {
     "id": 8,
     "titulo": "BODY DE MUJER TALLA S",
     "precio": 10,
     "descripcion": "Ideal para verano",
-    "imagen": "assets/img/blusa2.png",
+    "imagen": "assets/img/body2.png",
     "categoria": "Mujer",
     "subcategoria": "Bodys"
   },
@@ -77,16 +77,16 @@
     "titulo": "BODY DE MUJER TALLA S",
     "precio": 10,
     "descripcion": "Ideal para verano",
-    "imagen": "assets/img/blusa3.png",
+    "imagen": "assets/img/body3.png",
     "categoria": "Mujer",
     "subcategoria": "Bodys"
   },
   {
     "id": 10,
-    "titulo": "BODY DE MUJER TALLA S",
+    "titulo": "BODY DE UN SOLO HOMBRO TALLA S",
     "precio": 12,
-    "descripcion": "Blusa para verano",
-    "imagen": "assets/img/blusa4.png",
+    "descripcion": "Bodys de un solo hombro en colores blanco, gris y negro.",
+    "imagen": "assets/img/body4.png",
     "categoria": "Mujer",
     "subcategoria": "Bodys"
   },
@@ -224,5 +224,68 @@
     "imagen": "assets/img/gafas2.png",
     "categoria": "Accesorios",
     "subcategoria": "Gafas"
+  },
+  {
+    "id": 26,
+    "titulo": "CAMISETA MANGAS LARGAS",
+    "precio": 8,
+    "descripcion": "Camiseta manga larga fresca color blanco y negro ",
+    "imagen": "assets/img/cam9.png",
+    "categoria": "Hombres",
+    "subcategoria": "Camisas"
+  },
+  {
+    "id": 27,
+    "titulo": "TANK TOP",
+    "precio": 8,
+    "descripcion": "Top sin mangas en color rosa sólido, con textura acanalada y escote redondo",
+    "imagen": "assets/img/blusa1.png",
+    "categoria": "Mujeres",
+    "subcategoria": "Blusas"
+  },
+  {
+    "id": 28,
+    "titulo": "CROP TOP CON TIRANTES CRUZADOS",
+    "precio": 8,
+    "descripcion": "Crop top blanco sin mangas con textura acanalada y tirantes cruzados en el pecho que forman un diseño tipo “X”.",
+    "imagen": "assets/img/blusa2.png",
+    "categoria": "Mujeres",
+    "subcategoria": "Blusas"
+  },
+  {
+    "id": 29,
+    "titulo": "CAMISETAS BASICAS",
+    "precio": 8,
+    "descripcion": "Camisetas básicas de manga corta en colores blanco, beige y negro",
+    "imagen": "assets/img/blusa3.png",
+    "categoria": "Mujeres",
+    "subcategoria": "Blusas"
+  },
+  {
+    "id": 30,
+    "titulo": "CROP TOP BASICO",
+    "precio": 8,
+    "descripcion": "Crop top blanco de manga corta con diseño de espalda descubierta",
+    "imagen": "assets/img/blusa4.png",
+    "categoria": "Mujeres",
+    "subcategoria": "Blusas"
+  },
+{
+    "id": 31,
+    "titulo": "BLUSAS DE TIRANTES",
+    "precio": 8,
+    "descripcion": "Blusas tipo camisole con tirantes finos en colores blanco y negro.",
+    "imagen": "assets/img/blusa5.png",
+    "categoria": "Mujeres",
+    "subcategoria": "Blusas"
+  },
+  {
+    "id": 32,
+    "titulo": "BODY SIN MANGAS TONOS LAVANDA",
+    "precio": 12,
+    "descripcion": "Bodys sin mangas con cuello alto y cierre de broches en la parte inferior.",
+    "imagen": "assets/img/body5.png",
+    "categoria": "Mujer",
+    "subcategoria": "Bodys"
   }
 ]

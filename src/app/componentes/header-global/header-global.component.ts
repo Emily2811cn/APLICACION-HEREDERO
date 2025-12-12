@@ -1,28 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { IonHeader, IonTitle, IonToolbar, IonButtons} from '@ionic/angular/standalone'
+import { IonHeader, IonTitle, IonToolbar, IonButtons, IonSearchbar } from '@ionic/angular/standalone';
+
 @Component({
   selector: 'app-header-global',
   templateUrl: './header-global.component.html',
   styleUrls: ['./header-global.component.scss'],
   standalone: true,
-  imports: [IonButtons, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonButtons, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonSearchbar]
 })
-export class HeaderGlobalComponent  implements OnInit {
+export class HeaderGlobalComponent implements OnInit {
 
-  constructor(
-    private router: Router
-) { }
+  @Output() textoFiltrado = new EventEmitter<string>(); // 👈 evento hacia el padre
+
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
-
-  irprincipal(){
+  irprincipal() {
     this.router.navigate(['/principal']);
   }
 
+  filtrar(event: any) {
+    const texto = (event?.target.value || '').toLowerCase().trim();
+    this.textoFiltrado.emit(texto); // 👈 enviamos el texto al padre
+  }
 }
-
-

@@ -34,42 +34,36 @@ export class PRINCIPALPage implements OnInit {
   }
 
   cargarCategorias(){
-    this.http.get('assets/BD/categorias.json')
-    .subscribe((data: any) =>{
-      this.categorias = data;
+    this.http.get('assets/BD/categorias.json')//realiza una peticion get al archivo categorias.json
+    .subscribe((data: any) =>{//lee el archivo categorias.json
+      this.categorias = data;//almacena las categorias en el array categorias
     });
   }
 
   cargarProductos(){
-    this.http.get('assets/BD/productos.json')
-    .subscribe((data: any) => {
-      this.productos = data;
-      this.productosfiltrados = [...this.productos];
+    this.http.get('assets/BD/productos.json')//realiza una peticion get al archivo productos.json
+    .subscribe((data: any) => {//lee el archivo productos.json
+      this.productos = data;//almacena los productos en el array productos
+      this.productosfiltrados = [...this.productos];//copia todos los productos al array productosfiltrados
     });
  }
 
-  filtrarPorCategoria(nombre: string){
+  filtrarPorCategoria(nombre: string){//filtra los productos por subcategoria
     this.productosfiltrados = this.productos.filter(p=> p.subcategoria === nombre);
+    //filtra los productos por subcategoria y los almacena en el array productosfiltrados
+
+    console.log("Subcategoria: ", nombre,//muestra la subcategoria por la que se filtro
+      "Cantidad de productos: ", this.productosfiltrados.length,//muestra la cantidad de productos que hay en la subcategoria
+      "Productos: ", this.productosfiltrados//muestra los productos que hay en la subcategoria
+    );
+
   }
 
   irvermas(producto: any){
     this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
-
-
-  filtrar(event: any){
-    const texto=(event?.target.value || '').toLowerCase().trim();
-    if(texto === ""){
-      this.productosfiltrados = [...this.productos];
-      return;
-    }
-    this.productosfiltrados=this.productos.filter(
-      p=>p.titulo.toLowerCase().includes(texto) || p.descripcion.toLowerCase().includes(texto)
-    );
-  }
-
-    async verimagengrande(producto: any){
+    async verimagengrande(producto: any){//muestra la imagen en grande en una ventana emergente
       const modal = await this.modalCtrl.create({
         component : MasComponent,
         componentProps : { imagen: producto.imagen, titulo: producto.titulo},//lo que va a aparecer en la ventana emergente (imagen y titulo)
@@ -78,7 +72,21 @@ export class PRINCIPALPage implements OnInit {
       await modal.present();
     }
 
-    mostrarTodos(){
-      this.productosfiltrados = [...this.productos];
+    mostrarTodos(){//muestra todos los productos
+      this.productosfiltrados = [...this.productos];//copia todos los productos al array productosfiltrados
     }
+    
+  onTextoFiltrado(texto: string) {
+  if (texto === "") {
+    this.productosfiltrados = [...this.productos];
+    return;
+  }
+
+  this.productosfiltrados = this.productos.filter(
+    p =>
+      p.titulo.toLowerCase().includes(texto) ||
+      p.descripcion.toLowerCase().includes(texto)
+  );
+}
+
 }

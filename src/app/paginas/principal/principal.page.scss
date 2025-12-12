@@ -49,7 +49,7 @@
   color: red;           // Rojo
   display: block;       // Asegura que ocupe todo el ancho
 }
-.search{
+.search{//estilo del cuadro de busqueda
   margin: 10px;
   background-origin: padding-box;
   --background: #554f4f51;
@@ -59,7 +59,7 @@
 }
 
 .categorias {
-  border-bottom: 1px solid #8e09db;
+  border-bottom: 1px solid #8b13d0;
   padding: 8px 0;
   margin-left: auto;
 }
@@ -86,7 +86,7 @@
   display: flex;
   top: 32px;
   left: 0;
-  position: absolute;
+  position: absolute;//
   background: rgba(155, 158, 155, 0.582);
   padding: 10px 0;
   margin: 0;
@@ -111,5 +111,5 @@
 }
 
 .submenu li:hover {
-  background-color: #97959786;
+  background-color: #878587;
 }
