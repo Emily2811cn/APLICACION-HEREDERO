@@ -3,14 +3,21 @@
   <ion-toolbar class ="header-toolbar">
     <div class="header-content">
       <div class="Logo-titulo" (click)="irprincipal()">
-        <img class="Logo" src="assets/img/Logo.png">
-        <ion-title>HEREDERO STYLE</ion-title>
+        <img class="Logo" src="assets/img/Heredero.png">
       </div>
-      <div class="search-wrapper">
-        <ion-searchbar 
-        placeholder="Buscar prendas" (ionInput)="filtrar($event)" class="search-header">
-        </ion-searchbar>
-      </div>
+<div class="search-wrapper">
+  <div class="search-car-group">
+    <ion-searchbar 
+      placeholder="Buscar prendas" 
+      (ionInput)="filtrar($event)" 
+      class="search-header">
+    </ion-searchbar>
+    <div class="car">
+      <ion-icon name="cart-outline"></ion-icon>
+    </div>
+  </div>
+</div>
+
     </div>
   </ion-toolbar>
 </ion-header>

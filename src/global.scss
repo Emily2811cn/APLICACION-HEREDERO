@@ -9,6 +9,11 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+/* Primero van los @use (Swiper) */
+@use 'swiper/css' as *;
+@use 'swiper/css/autoplay' as *;
+@use 'swiper/css/pagination' as *;
+
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -25,11 +30,8 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/*carrucel*/
+/* Paleta de colores (Dark mode opcional) */
 @import '@ionic/angular/css/palettes/dark.system.css';
-@import 'swiper/css';
-@import 'swiper/css/autoplay';
-@import 'swiper/css/pagination';
 
 /**
  * Ionic Dark Mode
@@ -42,9 +44,10 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 
-.estilo-modal::part(backdrop){
+/* Estilos personalizados */
+.estilo-modal::part(backdrop) {
   --backdrop-opacity: 5;
-    background: rgba(194, 188, 188, 0.801);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  background: rgba(194, 188, 188, 0.801);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }

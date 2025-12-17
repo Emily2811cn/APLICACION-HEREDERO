@@ -1,62 +1,122 @@
+/* LOGO */
 .Logo {
-  width: 90px;
-  height: 90px;
+  width: 220px;   /* tamaño base para móviles */
+  height: auto;
   border-radius: 8px;
 
+  @media (min-width: 768px) {
+    width: 350px; /* tablets */
+  }
 
+  @media (min-width: 1024px) {
+    width: 450px; /* pantallas grandes */
+    height: 120px;
+  }
 }
 
+/* HEADER */
 ion-header,
 ion-toolbar {
-  --background: #928e8e30;
+  --background: #837f7f41;
   box-shadow: none;
   border-bottom: none;
 }
 
+/* CONTENIDO DEL HEADER */
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   width: 100%;
-  gap: 2rem;
-}
+  gap: 1rem;
 
-.Logo-titulo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;//
+  @media (max-width: 600px) {
+    flex-direction: column; /* apila en móvil */
+    gap: 0.8rem;
+    padding: 1rem 0;
+  }
 
-  ion-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #222222a4;
-    font-weight: bold;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  @media (min-width: 1024px) {
+    flex-direction: row; /* fila en escritorio */
+    gap: 2rem;
   }
 }
 
+/* BUSCADOR + CARRITO */
 .search-wrapper {
-  position: relative;
-  left: 1%;
   flex: 1;
   max-width: 700px;
-  padding: 0 2rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.search-car-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    justify-content: flex-end;
+  }
+}
+
+/* BUSCADOR */
 .search-header {
-  width: 60%;
-  --background: #00000000;
-  --color: #000000;
-  --placeholder-color: #6f6c6cc1;
+  --background: #55535234;
+  --placeholder-color: #000000;
   --icon-color: #000000;
-  border-radius: 50px;
-  border: 2px solid black;
-  max-width: 500px;
+  border-radius: 9999px; /* pill style */
   box-shadow: none;
   font-size: 1rem;
   font-weight: 500;
+  width: 100%;
+  max-width: 400px;
+  flex-grow: 1;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+}
+
+ion-searchbar::part(input) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.6rem 1rem;
+}
+
+ion-searchbar::part(icon) {
+  color: #000000 !important;
+}
+
+/* CARRITO */
+.car {
+  font-size: 1.5rem;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+  width: auto; // ← elimina el ancho fijo
+
+  @media (max-width: 600px) {
+    font-size: 1.3rem;
+  }
+}
+
+.search-car-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px; // ← límite para que no se extienda demasiado
+
+  @media (min-width: 1024px) {
+    justify-content: center; // ← centrado en pantallas grandes
+  }
 }

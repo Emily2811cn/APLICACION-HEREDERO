@@ -12,7 +12,9 @@
         Todos
       </li>
       <li class="item" *ngFor="let cat of categorias"> <!--MENU DINAMICO-->
+        
         {{cat.Categoria}}
+        <ion-icon name="caret-down-outline"></ion-icon>
         <ul class="submenu">
           <li *ngFor="let sub of cat.subcategoria"
           (click)="filtrarPorCategoria(sub)"> <!--SUBMENU-->
