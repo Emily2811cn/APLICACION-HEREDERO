@@ -2,12 +2,25 @@
   <ion-toolbar>
     <ion-title>{{titulo}}</ion-title>
     <ion-button class="iconocerrar" slot="end" (click)="cerrarModal()">
-      <ion-icon  name="close-circle-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
     </ion-button>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
-  <div class="conte-img">
-    <img class="img-mas" [src]="imagen">
+  <div class="contenedor-modal">
+    <img class="img-modal" [src]="imagen" />
+
+    <div class="info-modal">
+      <h3>{{titulo}}</h3>
+      <p>{{descripcion}}</p>
+      <p class="precio">Precio: ${{precio}}</p>
+
+      <!-- Botón con ícono de carrito -->
+      <ion-button expand="block" color="dark" class="boton-carrito" (click)="agregarAlCarrito()">
+        <ion-icon slot="start" name="cart-outline"></ion-icon>
+        Agregar al carrito
+      </ion-button>
+    </div>
   </div>
 </ion-content>

@@ -1,2 +1,36 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
+
+
+/* BODY SIEMPRE BLANCO */
+body {
+  --ion-background-color: #ffffff;
+  --ion-background-color-rgb: 255,255,255;
+
+  --ion-text-color: #000000;
+  --ion-text-color-rgb: 0,0,0;
+
+  /* Escala de grises eliminada */
+  --ion-color-step-50: #ffffff;
+  --ion-color-step-100: #ffffff;
+  --ion-color-step-150: #ffffff;
+  --ion-color-step-200: #ffffff;
+  --ion-color-step-250: #ffffff;
+  --ion-color-step-300: #ffffff;
+  --ion-color-step-350: #ffffff;
+  --ion-color-step-400: #ffffff;
+  --ion-color-step-450: #ffffff;
+  --ion-color-step-500: #ffffff;
+  --ion-color-step-550: #ffffff;
+  --ion-color-step-600: #ffffff;
+  --ion-color-step-650: #ffffff;
+  --ion-color-step-700: #ffffff;
+  --ion-color-step-750: #ffffff;
+  --ion-color-step-800: #ffffff;
+  --ion-color-step-850: #ffffff;
+  --ion-color-step-900: #ffffff;
+  --ion-color-step-950: #ffffff;
+
+  --ion-item-background: #ffffff;
+  --ion-border-color: #e0e0e0;
+}

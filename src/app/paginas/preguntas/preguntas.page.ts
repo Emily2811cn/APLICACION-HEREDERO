@@ -22,11 +22,6 @@ export class PreguntasPage implements OnInit {
       respuesta: 'Cada prenda mantiene detalles artesanales, aunque se producen en pequeñas cantidades para garantizar calidad.'
     },
     {
-      icono: 'woman-outline',
-      titulo: '¿Cómo sé cuál es mi talla correcta?',
-      respuesta: 'Puedes guiarte con nuestra tabla de medidas disponible en la sección de catálogo.'
-    },
-    {
       icono: 'car-outline',
       titulo: '¿Cuánto tarda en llegar mi pedido?',
       respuesta: 'Los envíos nacionales tardan entre 3 y 5 días hábiles.'
@@ -47,24 +42,9 @@ export class PreguntasPage implements OnInit {
       respuesta: 'Te enviamos una nueva sin costo adicional.'
     },
     {
-      icono: 'person-outline',
-      titulo: '¿Quién diseña las prendas de Heredero Style?',
-      respuesta: 'Carlos Ramírez, fundador de la marca, junto con un equipo de diseñadores locales.'
-    },
-    {
       icono: 'flower-outline',
       titulo: '¿Se pueden personalizar las prendas?',
       respuesta: 'Claro, ofrecemos opciones de personalización en ciertos modelos. '
-    },
-    {
-      icono: 'color-palette-outline',
-      titulo: '¿Los diseños son exclusivos?',
-      respuesta: 'Sí, cada colección tiene piezas limitadas para mantener la exclusividad y el valor artesanal.'
-    },
-    {
-      icono: 'leaf-outline',
-      titulo: '¿Qué materiales utilizan?',
-      respuesta: 'Trabajamos con algodón de alta calidad y telas seleccionadas que garantizan comodidad y durabilidad.'
     },
     {
       icono: 'construct-outline',
@@ -75,11 +55,6 @@ export class PreguntasPage implements OnInit {
       icono: 'cash-outline',
       titulo: '¿Se pueden hacer compras a plazos?',
       respuesta: 'Sí, ofrecemos pagos en cuotas a través de plataformas como PayPhone y MercadoPago.'
-    },
-    {
-      icono: 'globe-outline',
-      titulo: '¿Hacen envíos internacionales?',
-      respuesta: 'Sí, enviamos a varios países de Latinoamérica. El costo y tiempo varían según destino.'
     },
     {
       icono: 'people-outline',

@@ -1,0 +1,125 @@
+.contenedor-carrito {
+  padding: 20px;
+}
+
+ion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.precio {
+  font-weight: bold;
+  color: #e60023;
+}
+
+.total {
+  margin-top: 20px;
+  text-align: center;
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  ion-button {
+    font-weight: 100;
+    border-radius: 8px;
+    --background: #9b9895;
+    width: 650px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+
+    &:hover {
+      --background: #ee6a27;
+
+    }
+    
+  }
+
+}
+
+.carrito-vacio {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+
+  ion-icon {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedor-carrito {
+    padding: 10px;
+  }
+
+  ion-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    ion-thumbnail {
+      margin-bottom: 10px;
+      width: 100px;
+      height: 100px;
+    }
+
+    ion-label {
+      width: 100%;
+      font-size: 15px;
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .precio {
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        align-items: right;
+      }
+    }
+
+    ion-button {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+  }
+
+  .total {
+    text-align: center;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    ion-button {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 15px;
+    }
+  }
+
+  .carrito-vacio {
+    padding: 30px 20px;
+
+    ion-icon {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

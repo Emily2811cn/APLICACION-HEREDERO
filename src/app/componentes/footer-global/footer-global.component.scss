@@ -1,24 +1,57 @@
-ion-icon {
-  font-size: 50px;
-  color: rgb(10, 10, 10); //color de los iconos
-}
-.footer{
-  background-color: rgba(128, 120, 120, 0.349); //color de la banda de fondo
-  padding: 10px 0;
+/* ====== FOOTER GENERAL ====== */
+.footer {
+  background-color: rgba(128, 120, 120, 0.349); /* color de fondo */
+  padding: 20px 10px;
   border-top: 1px solid #0000002f;
 }
-.redes{
-  text-align: center; //centrar los iconos
+
+/* ====== BLOQUE DE REDES ====== */
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* separación entre íconos */
+  margin-bottom: 20px;
 }
-.menu{
-  margin-top: 10px; // para que no se unan los iconos
+
+.redes ion-icon {
+  font-size: 32px;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+
+  &:hover {
+    color: #dda83e; /* color al pasar el mouse */
+  }
 }
-.menu a{
-  margin: 0 80px; //espacio entre las palabras del .menu
-  font-size: 15px;
-  color:rgb(0, 0, 0);
+
+/* ====== BLOQUE DE MENÚ ====== */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px; /* separación entre enlaces en computadora */
 }
-.menu a:hover{
-  text-decoration: underline;
-  color: rgb(121, 126, 126);
+
+.menu a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: rgb(121, 126, 126);
+  }
+}
+
+/* ====== RESPONSIVE PARA TELÉFONO ====== */
+@media screen and (max-width: 600px) {
+  .redes {
+    gap: 25px; /* menos separación en móvil */
+  }
+
+  .menu {
+    flex-direction: column; /* enlaces apilados */
+    gap: 12px; /* separación vertical */
+    text-align: center;
+  }
 }

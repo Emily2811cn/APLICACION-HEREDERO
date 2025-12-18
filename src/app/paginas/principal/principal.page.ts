@@ -66,8 +66,9 @@ export class PRINCIPALPage implements OnInit {
     async verimagengrande(producto: any){//muestra la imagen en grande en una ventana emergente
       const modal = await this.modalCtrl.create({
         component : MasComponent,
-        componentProps : { imagen: producto.imagen, titulo: producto.titulo},//lo que va a aparecer en la ventana emergente (imagen y titulo)
-        cssClass: 'estilo-modal'
+        componentProps : { imagen: producto.imagen, titulo: producto.titulo, descripcion: producto.descripcion, precio: producto.precio},//lo que va a aparecer en la ventana emergente (imagen y titulo)
+        cssClass: ['estilo-modal','modal-grande'] //clase css para darle estilo a la ventana emergente
+        
       });
       await modal.present();
     }
@@ -103,4 +104,4 @@ slideOpts = {
   },
   loop: true
 };
-}
+ }

@@ -14,6 +14,8 @@ export class MasComponent  implements OnInit {
 
   @Input() imagen: string = '';
   @Input() titulo: string = '';
+  @Input() descripcion: string = '';
+  @Input() precio: number = 0;
 
 
   constructor(
@@ -25,6 +27,22 @@ export class MasComponent  implements OnInit {
   cerrarModal(){
     this.modalCtrl.dismiss();
   }
+ agregarAlCarrito() {
+  const nuevoProducto = {
+    imagen: this.imagen,
+    titulo: this.titulo,
+    descripcion: this.descripcion,
+    precio: this.precio
+  };
+
+  let carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+  carrito.push(nuevoProducto);
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+
+  console.log('Carrito actualizado:', carrito); // 👀 para verificar
+}
+
+
 
 }
 

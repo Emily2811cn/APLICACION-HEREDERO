@@ -1,0 +1,40 @@
+<app-header-global></app-header-global>
+
+
+<ion-content>
+  <div class="contenedor-carrito" *ngIf="carrito.length > 0; else vacio">
+    <ion-list>
+      <ion-item *ngFor="let producto of carrito; let i = index">
+        <ion-thumbnail slot="start">
+          <img [src]="producto.imagen" />
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{producto.titulo}}</h2>
+          <p>{{producto.descripcion}}</p>
+          <p class="precio">Precio: ${{producto.precio}}</p>
+        </ion-label>
+        <ion-button fill="clear" color="danger" (click)="eliminarProducto(i)">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+
+    <div class="total">
+      <h3>Total: ${{calcularTotal()}}</h3>
+      <ion-button  class="finalizar">
+        Finalizar Compra
+      </ion-button>
+    </div>
+  </div>
+
+  <ng-template #vacio>
+    <div class="carrito-vacio">
+      <ion-icon name="cart-outline" size="large"></ion-icon>
+      <p>Tu carrito está vacío</p>
+    </div>
+  </ng-template>
+</ion-content>
+<app-footer-global>
+
+</app-footer-global>
+

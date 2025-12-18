@@ -29,6 +29,10 @@ export const routes: Routes = [
     path: 'horarios',
     loadComponent: () => import('./paginas/horarios/horarios.page').then( m => m.HorariosPage)
   },
+  {
+    path: 'carrito',
+    loadComponent: () => import('./carrito/carrito.page').then( m => m.CarritoPage)
+  },
 
 
 ];

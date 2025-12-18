@@ -1,15 +1,116 @@
 .iconocerrar{
   --color: #000000;
-  --background: #706b6b7e;
-}
-.conte-img{
-  width: 100%;
+  --background: #706b6b00;
+  border-radius: 50%;
+
+  }
+.contenedor-modal {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;               // más espacio entre imagen y texto
+  padding: 30px 40px;      // más aire alrededor
   align-items: center;
+  justify-content: center;
+  max-width: 1000px;       // límite de ancho elegante
+  margin: 0 auto;          // centrado horizontal
 }
-.img-mas{
-  width: 80%;
-  max-width: 500px;
-  border-radius: 14px;
+
+.img-modal {
+  max-width: 350px;        // imagen más grande
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.info-modal {
+  flex: 1;
+  min-width: 300px;
+
+  h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .precio {
+    font-weight: bold;
+    color: #000000;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  }
+
+/* Botón carrito con efecto hover y toque visual */
+.boton-carrito {
+  width: 300px;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;          // ✅ asegura que se comporte como bloque
+  margin-left: auto;       // ✅ alinea a la derecha si quieres
+  margin-right: auto;      // ✅ centra si prefieres
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+/* Responsive refinado para móviles */
+@media screen and (max-width: 600px) {
+  .contenedor-modal {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-modal {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .info-modal {
+    width: 100%;
+    padding: 0 10px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 6px;
+      text-align: justify; // ✅ texto justificado en móviles
+    }
+
+    .precio {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .boton-carrito {
+      width: 80%;          // ✅ más pequeño en móviles
+      margin: 0 auto;      // ✅ centrado
+      font-size: 13px;
+    }
+  }
 }

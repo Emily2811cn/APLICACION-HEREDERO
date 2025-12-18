@@ -29,4 +29,8 @@ export class HeaderGlobalComponent implements OnInit {
     const texto = (event?.target.value || '').toLowerCase().trim();
     this.textoFiltrado.emit(texto); // 👈 enviamos el texto al padre
   }
+  irAlCarrito() {
+  this.router.navigate(['/carrito']);
+}
+
 }
