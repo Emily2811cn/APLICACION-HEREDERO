@@ -1,0 +1,56 @@
+.contenedor-modal {
+  background: #fff;
+  color: #000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ion-toolbar {
+  background: #000;
+  color: #fff;
+}
+
+ion-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contenedor-productos h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.precio, .subtotal {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.cantidad-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.total {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.finalizar {
+  background: #000;
+  color: #fff;
+}
+
+.tienda-vacia {
+  text-align: center;
+  margin-top: 3rem;
+  color: #000;
+}
+
+.logo-decorativo {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+}

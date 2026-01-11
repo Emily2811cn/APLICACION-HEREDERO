@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>Tienda</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarModal()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenedor-modal">
+    <!-- Si hay productos -->
+    <div *ngIf="productos.length > 0; else vacio" class="contenedor-productos">
+      <ion-list>
+        <ion-item *ngFor="let producto of productos; let i = index">
+          <ion-thumbnail slot="start">
+            <img [src]="producto.imagen" />
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{producto.titulo}}</h2>
+            <p>{{producto.descripcion}}</p>
+            <p class="precio">Precio Unitario: ${{producto.precio}}</p>
+            <p class="subtotal">Total: ${{producto.precio * producto.cantidad}}</p>
+            <div class="cantidad-selector">
+              <ion-button fill="clear" (click)="restarCantidad(i)">
+                <ion-icon name="remove-outline"></ion-icon>
+              </ion-button>
+              <span>{{producto.cantidad}}</span>
+              <ion-button fill="clear" (click)="sumarCantidad(i)">
+                <ion-icon name="add-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-label>
+          <ion-button fill="clear" color="danger" (click)="eliminarProducto(i)">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+
+      <div class="total">
+        <h3>Total: ${{calcularTotal()}}</h3>
+        <ion-button expand="block" class="finalizar" color="dark">
+          Finalizar Compra
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- Si no hay productos -->
+    <ng-template #vacio>
+      <div class="tienda-vacia">
+        <ion-icon name="cart-outline" size="large"></ion-icon>
+        <p>No hay productos seleccionados.</p>
+        <ion-button expand="block" color="dark" (click)="irprincipal()">Ir a la tienda</ion-button>
+      </div>
+    </ng-template>
+
+  </div>
+</ion-content>
+
+<app-footer-global></app-footer-global>
